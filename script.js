@@ -69,7 +69,20 @@ isAllowedToEnter(16, true);
 // #endregion
 
 //#region Basics-Aufgabe 5
-// hier Lösung ergänzen
+
+console.log("-----------isValidEmail----------------");
+
+function isValidEmail(email) {
+	if (email.includes("@")) {
+		console.log("email is valid!");
+	} else {
+		console.log("email is not valid!");
+	}
+}
+
+isValidEmail("oguz@gmail.com");
+isValidEmail("oguzgmail.com");
+
 // #endregion
 
 //#region DOM-Aufgabe 1
