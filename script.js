@@ -51,7 +51,21 @@ isEven(7);
 // #endregion
 
 //#region Basics-Aufgabe 4
-// hier Lösung ergänzen
+
+console.log("-----------isAllowedToEnter----------------");
+
+function isAllowedToEnter(age, hasID) {
+	if (age >= 18 && hasID === true) {
+		console.log(true);
+	} else {
+		console.log(false);
+	}
+}
+
+isAllowedToEnter(20, true);
+isAllowedToEnter(20, false);
+isAllowedToEnter(16, true);
+
 // #endregion
 
 //#region Basics-Aufgabe 5
