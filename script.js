@@ -86,7 +86,21 @@ isValidEmail("oguzgmail.com");
 // #endregion
 
 //#region DOM-Aufgabe 1
-// hier Lösung ergänzen
+
+const domOneInputName = document.getElementById("dom-1-name");
+const domOneInputAge = document.getElementById("dom-2-age");
+const domOneElementResult = document.getElementById("dom-excersice-1-result");
+
+function domExerciseOne(inputName, inputAge, result) {
+	const inputNameValue = inputName.value;
+	const inputAgeValue = inputAge.value;
+
+	inputName.value = "";
+	inputAge.value = "";
+	result.innerHTML = /*html*/ `
+		Hallo, ich heiße ${inputNameValue} und bin ${inputAgeValue} Jahre alt.`;
+}
+
 // #endregion
 
 //#region DOM-Aufgabe 2
