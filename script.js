@@ -12,7 +12,26 @@ printName(firstName, age);
 // #endregion
 
 //#region Basics-Aufgabe 2
-// hier Lösung ergänzen
+
+console.log("-----------getTrafficLightStatus----------------");
+
+function getTrafficLightStatus(color) {
+	if (color === "green") {
+		console.log("Du darfst gehen!");
+	} else if (color === "yellow") {
+		console.log("Achtung!");
+	} else if (color === "red") {
+		console.log("Du musst stehen bleiben!");
+	} else {
+		console.log("Die Ampel ist kaputt");
+	}
+}
+
+getTrafficLightStatus("red");
+getTrafficLightStatus("yellow");
+getTrafficLightStatus("green");
+getTrafficLightStatus("brown");
+
 // #endregion
 
 //#region Basics-Aufgabe 3
