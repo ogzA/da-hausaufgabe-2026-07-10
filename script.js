@@ -104,7 +104,16 @@ function domExerciseOne(inputName, inputAge, result) {
 // #endregion
 
 //#region DOM-Aufgabe 2
-// hier Lösung ergänzen
+
+const domTwoResultElement = document.getElementById("dom-excersice-2-result");
+function addClass(id) {
+	id.classList.add("d_none");
+}
+
+function removeClass(id) {
+	id.classList.remove("d_none");
+}
+
 // #endregion
 
 // #region ZUSATZAUFGABE (OPTIONAL!!!)

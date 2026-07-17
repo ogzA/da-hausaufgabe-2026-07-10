@@ -100,6 +100,13 @@
                 Aufgabe "Basics-Aufgabe: 1" nutzen/anpassen ODER eine neue Funktion schreiben. </p>
             <div id="dom-excersice-1" class="result-wrapper">
                 ############# HIER LÖSUNG EINARBEITEN #############
+
+                <input id="dom-1-name" type="text" placeholder="Name">
+                <input id="dom-2-age" type="number" placeholder="Alter">
+                <button onclick="domExerciseOne(domOneInputName, domOneInputAge, domOneElementResult)">Ok</button>
+                <p id="dom-excersice-1-result">
+
+                </p>
                 
             </div>
         </div>
@@ -125,8 +132,8 @@
             <div id="dom-excersice-2" class="result-wrapper">
                 ############# HIER LÖSUNG EINARBEITEN #############
                 <p id="dom-excersice-2-result">Du kannst mich sehen</p>
-                <button>add Class d_none</button>
-                <button>remove Class d_none</button>
+                <button onclick="addClass(domTwoResultElement)">add Class d_none</button>
+                <button onclick="removeClass(domTwoResultElement)">remove Class d_none</button>
             </div>
         </div>
         <!-- #endregion -->
