@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Aufgaben</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>JavaScript - Aufgaben</h1>
+    <h2>Sektion I : Basics</h2>
+    <div class="excersices-wrapper">
+        <!-- #region Basics-Aufgabe 1  -->
+        <div class="excersice-wrapper">
+            <h3>Basics-Aufgabe: 1</h3>
+            <p><strong>Aufgabenstellung: </strong> Erstelle zwei globale Variablen: eine für deinen Vornamen und eine
+                für dein
+                Alter. Schreib eine Funktion <strong>printName()</strong>, die folgenden Satz in der Konsole ausgibt:
+                "Hallo, ich heiße
+                [Name] und bin [Alter] Jahre alt." Teste die Funktion, indem du sie im Script aufrufst.</p>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Basics-Aufgabe 2  -->
+        <div class="excersice-wrapper">
+            <h3>Basics-Aufgabe: 2</h3>
+            <p><strong>Aufgabenstellung: </strong>
+                Schreibe eine Funktion <strong>getTrafficLightStatus(color)</strong>. Der Funktion soll als Argument
+                eine der Farben "green", "yellow" oder "red" als String übergeben werden. Je nach Farbe, soll die
+                Funktion folgenden Wert zurückgeben:
+            
+            <ul>
+                <li>AUFRUF: getTrafficLightStatus("green") ==> RÜCKGABEWERT: "Du darst gehen!"</li>
+                <li>AUFRUF: getTrafficLightStatus("yellow") ==> RÜCKGABEWERT: "Achtung!"</li>
+                <li>AUFRUF: getTrafficLightStatus("red") ==> RÜCKGABEWERT: "Du musst stehen bleiben!"</li>
+                <li>In allen anderen Fällen ==> RÜCKGABEWERT: "Die Ampel ist kaputt"</li>
+            </ul>
+            Teste die Funktion mit allen Varianten UND gib das Ergebnis jeweils in der Konsole aus.</p>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Basics-Aufgabe 3  -->
+        <div class="excersice-wrapper">
+            <h3>Basics-Aufgabe: 3</h3>
+            <p><strong>Aufgabenstellung: </strong>
+                Schreibe eine Funktion <strong>isEven(number)</strong>, die true zurückgibt, wenn
+                die number gerade ist, und false, wenn sie ungerade ist. <br>
+                Teste die Funktion mit unterschiedlichen Test-Szenarien => Mit den Zahlen 4 und 7 UND gib das Ergebnis
+                jeweils in der Konsole aus.
+            </p>
+            <p class="hint"><strong>Hinweis:</strong> Mit dem %-Operator (Modulo) kannst du den Rest einer Division
+                berechnen.<br>
+                4 % 2 ergibt 0 => 4 ist daher gerade<br>
+                9 % 2 ergibt 1 => 9 ist daher ungerade</p>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Basics-Aufgabe 4  -->
+        <div class="excersice-wrapper">
+            <h3>Basics-Aufgabe: 4</h3>
+            <p><strong>Aufgabenstellung: </strong>
+                Schreibe eine Funktion <strong>isAllowedToEnter(age, hasID)</strong>, die true zurückgibt, wenn jemand
+                18 oder älter ist UND einen Ausweis dabei hat. In allen anderen Fällen soll false zurückgegeben werden.
+                <br>
+                Teste die Funktion mit unterschiedlichen Test-Szenarien => "20, true", "20, false" und "16, true" UND
+                gib das Ergebnis jeweils in der Konsole aus.
+            </p>
+        </div>
+        <!-- #endregion -->
+        <!-- #region Basics-Aufgabe 5  -->
+        <div class="excersice-wrapper">
+            <h3>Basics-Aufgabe: 5</h3>
+            <p><strong>Aufgabenstellung: </strong>
+                Schreibe eine Funktion <strong>isValidEmail(email)</strong>, die prüft ob eine E-Mail-Adresse das
+                @-Zeichen enthält. Gibt true zurück wenn ja, false wenn nein.
+            </p>
+            <p class="hint"><strong>Hinweis:</strong> Suche nach einer Dokumentation der String Methode
+                <strong>.includes</strong> (z.B.
+                bei W3Scools)
+            </p>
+        </div>
+        <!-- #endregion -->
+    </div>
+    <h2>Sektion II : DOM-Manipulation</h2>
+    <div class="excersices-wrapper">
+        <!-- #region DOM-Aufgabe 1  -->
+        <div class="excersice-wrapper">
+            <h3>DOM-Aufgabe: 1</h3>
+            <p><strong>Aufgabenstellung: </strong> Erstelle im div mit der id <strong>dom-excersice-1</strong>
+            <ul>
+                <li>Ein Eingabefeld für den Vornamen</li>
+                <li>Ein Eingabefeld für das Alter</li>
+                <li>Ein Button "ok"</li>
+                <li>Ein leeres p-Tag mit der id <strong>dom-excersice-1-result</strong></li>
+            </ul>
+            Wenn der Button "ok" geklickt wird, soll in dem p-Tag mit der id <strong>dom-excersice-1-result</strong> der
+            Satz "Hallo, ich heiße [Name] und bin [Alter] Jahre alt." angezeigt werden. Für Name und Alter sollen die
+            aktuellen Values der Eingabefelder genutzt werden
+            </p>
+            <p class="hint"><strong>Hinweis:</strong> Du kannst die Funktion <strong>printName()</strong> aus der
+                Aufgabe "Basics-Aufgabe: 1" nutzen/anpassen ODER eine neue Funktion schreiben. </p>
+            <div id="dom-excersice-1" class="result-wrapper">
+                ############# HIER LÖSUNG EINARBEITEN #############
+                
+            </div>
+        </div>
+        <!-- #endregion -->
+        <!-- #region DOM-Aufgabe 2  -->
+        <div class="excersice-wrapper">
+            <h3>DOM-Aufgabe: 2</h3>
+            <p><strong>Aufgabenstellung: </strong>
+            <ul>
+                <li>Erstelle eine Funktion <strong>addClass()</strong> und eine Funktion
+                    <strong>removeClass()</strong>
+                </li>
+                <li>Wenn der Button "add Class d_none" geklickt wird, soll die Funktion addClass() aufgerufen UND
+                    dem p-Tag mit der ID <strong>dom-excersice-2-result</strong> die CSS Klasse "d_none" hinzufügt
+                    werden
+                </li>
+                <li>
+                    Wenn der Button "remove Class d_none" geklickt wird, soll die Funktion removeClass() aufgerufen UND
+                    dem p-Tag mit der ID <strong>dom-excersice-2-result</strong> die CSS Klasse "d_none" entfernt werden
+                </li>
+            </ul>
+            </p>
+            <div id="dom-excersice-2" class="result-wrapper">
+                ############# HIER LÖSUNG EINARBEITEN #############
+                <p id="dom-excersice-2-result">Du kannst mich sehen</p>
+                <button>add Class d_none</button>
+                <button>remove Class d_none</button>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+    <h2>ZUSATZAUFGABE - OPTIONAL!!!</h2>
+    <div class="excersices-wrapper">
+        <!-- #region ZUSATZAUFGABE (OPTIONAL!!!)  -->
+        <div class="excersice-wrapper">
+            <h3>Taschenrechner</h3>
+            <p><strong>Aufgabenstellung: </strong> Erstelle einen simplen Taschenrechner. Nutze dafür die gegeben
+                Buttons.
+                Folgende Punkte sind zu erledigen:
+            <ul>
+                <li>Erstelle eine globale Variable <strong>number1</strong></li>
+                <li>Erstelle eine globale Variable <strong>number2</strong></li>
+                <li>Erstelle eine globale Variable <strong>operator</strong></li>
+                <li>Erstelle eine Funktion <strong>setNumberOne(number)</strong></li>
+                <li>Erstelle eine Funktion <strong>setNumberTwo(number)</strong></li>
+                <li>Erstelle eine Funktion <strong>setOperator(newOperator)</strong></li>
+                <li>Erstelle eine Funktion <strong>getResult()</strong></li>
+                <li>
+                    Wenn die Funktion setNumberOne aufgerufen wird (z.B. setNumberOne(9)) , soll das übergebene Argument
+                    als neuer Wert für die Variable number1 gesetzt werden UND im span-Tag mit der ID
+                    <strong>selected-number1</strong>
+                    angezeigt werden.
+                </li>
+                <li>
+                    Wenn die Funktion setNumberTwo aufgerufen wird (z.B. setNumberTwo(9)) , soll das übergebene Argument
+                    als neuer Wert für die Variable number2 gesetzt werden UND im span-Tag mit der ID
+                    <strong>selected-number2</strong>
+                    angezeigt werden.
+                </li>
+                <li>
+                    Wenn die Funktion setOperator aufgerufen wird (z.B. setOperator("+")) , soll das übergebene Argument
+                    als neuer Wert für die Variable operator gesetzt werden UND im span-Tag mit der ID
+                    <strong>selected-operation</strong>
+                    angezeigt werden.
+                </li>
+                <li>
+                    Wenn die Funktion getResult aufgerufen wird, soll das Ergebnis mit den aktuell gesetzten Werten
+                    errechnet werden UND im span-Tag mit der ID <strong>calculator-result</strong>
+                    angezeigt werden.
+                </li>
+            </ul>
+            <p class="hint"><strong>Hinweis 1:</strong> Die jeweiligen Funktionsaufrufe sind in den Buttons schon
+                hinterlegt. </p>
+            <p class="hint"><strong>Hinweis 2:</strong> Ihr braucht in der Übung KEIN Fehlerhandling beachten (z.B.keine
+                Zahl
+                gesetzt oder kein Operator gesetzt)</p>
+
+            <div id="extra-1" class="calculator-wrapper">
+                <div class="setNumber-wrapper">
+                    <p>Wähle Zahl 1</p>
+                    <div class="buttons-wrapper">
+                        <button id="number1-0" onclick="setNumberOne(0)">0</button>
+                        <button id="number1-1" onclick="setNumberOne(1)">1</button>
+                        <button id="number1-2" onclick="setNumberOne(2)">2</button>
+                        <button id="number1-3" onclick="setNumberOne(3)">3</button>
+                        <button id="number1-4" onclick="setNumberOne(4)">4</button>
+                        <button id="number1-5" onclick="setNumberOne(5)">5</button>
+                        <button id="number1-6" onclick="setNumberOne(6)">6</button>
+                        <button id="number1-7" onclick="setNumberOne(7)">7</button>
+                        <button id="number1-8" onclick="setNumberOne(8)">8</button>
+                        <button id="number1-9" onclick="setNumberOne(9)">9</button>
+                    </div>
+                </div>
+                <div class="setNumber-wrapper">
+                    <p>Wähle Zahl 2</p>
+                    <div class="buttons-wrapper">
+                        <button id="number1-0" onclick="setNumberTwo(0)">0</button>
+                        <button id="number1-1" onclick="setNumberTwo(1)">1</button>
+                        <button id="number1-2" onclick="setNumberTwo(2)">2</button>
+                        <button id="number1-3" onclick="setNumberTwo(3)">3</button>
+                        <button id="number1-4" onclick="setNumberTwo(4)">4</button>
+                        <button id="number1-5" onclick="setNumberTwo(5)">5</button>
+                        <button id="number1-6" onclick="setNumberTwo(6)">6</button>
+                        <button id="number1-7" onclick="setNumberTwo(7)">7</button>
+                        <button id="number1-8" onclick="setNumberTwo(8)">8</button>
+                        <button id="number1-9" onclick="setNumberTwo(9)">9</button>
+                    </div>
+                </div>
+                <div class="setOperation-wrapper">
+                    <p>Wähle Operation</p>
+                    <div class="buttons-wrapper">
+                        <button onclick="setOperator('+')">+</button>
+                        <button class="fancy-button" onclick="getResult()">=</button>
+                    </div>
+                </div>
+            </div>
+            <div id="extra-excersice-1" class="result-wrapper">
+                ############# HIER WERTE VERÄNDERN #############
+                <p>Zahl 1: <span id="selected-number1">X</span></p>
+                <p>Zahl 2: <span id="selected-number2">X</span></p>
+                <p>Operation: <span id="selected-operation">X</span></p>
+                <p>Ergebnis: <span id="calculator-result">X</span></p>
+            </div>
+        </div>
+        <!-- #endregion -->
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
